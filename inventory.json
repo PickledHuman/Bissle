@@ -1,0 +1,47 @@
+{
+    "109415053777": {
+        "name": "greater healing potion",
+        "currentStock": 5,
+        "stock": 5,
+        "price": 200,
+        "nextRefresh": 1532402359391,
+        "restockTime": 604800000,
+        "maxbuy": 0
+    },
+    "182949691028": {
+        "name": "1st level spell scroll",
+        "currentStock": 30,
+        "stock": 30,
+        "price": 50,
+        "nextRefresh": 1532402376212,
+        "restockTime": 604800000,
+        "maxbuy": 0
+    },
+    "230860716107": {
+        "name": "2nd level spell scroll",
+        "currentStock": 20,
+        "stock": 20,
+        "price": 500,
+        "nextRefresh": 1532402402324,
+        "restockTime": 604800000,
+        "maxbuy": 0
+    },
+    "287260536902": {
+        "name": "healing potion",
+        "currentStock": 20,
+        "stock": 20,
+        "price": 50,
+        "nextRefresh": 1532402348479,
+        "restockTime": 604800000,
+        "maxbuy": 5
+    },
+    "260208534850": {
+        "name": "3rd level spell scroll",
+        "currentStock": 10,
+        "stock": 10,
+        "price": 1000,
+        "nextRefresh": 1532402414814,
+        "restockTime": 604800000,
+        "maxbuy": 0
+    }
+}

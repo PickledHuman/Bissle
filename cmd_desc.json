@@ -1,0 +1,219 @@
+{
+    "100043567134" : {
+        "id" : "r",
+        "title" : "r | rr",
+        "blurb" : "Rolls natural 20s five percent of the time, *every time*.",
+        "dmable" : true,
+        "minrole" : "ALL"
+    },
+    "108078212093" : {
+        "id" : "rr",
+        "title" : "r | rr",
+        "blurb" : "Rolls natural 20s five percent of the time, *every time*.",
+        "dmable" : true,
+        "minrole" : "ALL"
+    },
+    "39610369484" : {
+        "id" : "command",
+        "title" : "commands",
+        "blurb" : "Prints list of valid commands.",
+        "dmable" : true,
+        "minrole" : "ALL"
+    },
+    "126836140700" : {
+        "id" : "commands",
+        "title" : "commands",
+        "blurb" : "Prints list of valid commands.",
+        "dmable" : true,
+        "minrole" : "ALL"
+    },
+    "134914279753" : {
+        "id" : "help",
+        "title" : "help",
+        "blurb" : "Bissle takes the Help action.",
+        "dmable" : true,
+        "minrole" : "ALL"
+    },
+    "126044292909" : {
+        "id" : "ask",
+        "title" : "ask",
+        "blurb" : "Asks Bissle a yes/no question.",
+        "dmable" : true,
+        "minrole" : "ALL"
+    },
+    "301730799759" : {
+        "id" : "joke",
+        "title" : "joke",
+        "blurb" : "Makes Bissle tell you a joke.",
+        "dmable" : true,
+        "minrole" : "ALL"
+    },
+    "291109301462" : {
+        "id" : "lfg",
+        "title" : "lfg",
+        "blurb" : "Toggles LFG role, lists players LFG.",
+        "dmable" : false,
+        "minrole" : "ORANGE"
+    },
+    "128345744349" : {
+        "id" : "dm",
+        "title" : "dm",
+        "blurb" : "Toggles DM role, lists available DMs.",
+        "dmable" : false,
+        "minrole" : "ORANGE"
+    },
+    "25589870370" : {
+        "id" : "clockwhistle",
+        "title" : "clockwhistle",
+        "blurb" : "Orders clockwhistles.",
+        "dmable" : false,
+        "minrole" : "ORANGE"
+    },
+    "258568624568" : {
+        "id" : "retire",
+        "title" : "retire",
+        "blurb" : "**CAUTION:** Permanently retires your character.",
+        "dmable" : false,
+        "minrole" : "ORANGE"
+    },
+    "319855219222" : {
+        "id" : "swap",
+        "title" : "swap",
+        "blurb" : "Swaps your active and inactive characters.",
+        "dmable" : false,
+        "minrole" : "ORANGE"
+    },
+    "176293797062" : {
+        "id" : "transfer",
+        "title" : "transfer",
+        "blurb" : "Transfers wealth to another active guild member.",
+        "dmable" : false,
+        "minrole" : "ORANGE"
+    },
+    "289236880833" : {
+        "id" : "spend",
+        "title" : "spend",
+        "blurb" : "Spends your hard-earned gold and treasure points on useless baubles.",
+        "dmable" : false,
+        "minrole" : "ORANGE"
+    },
+    "174322002516" : {
+        "id" : "sell",
+        "title" : "sell",
+        "blurb" : "Sell state-of-the-art goblin tech for copper pieces!",
+        "dmable" : false,
+        "minrole" : "ORANGE"
+    },
+    "144065581039" : {
+        "id" : "donate",
+        "title" : "donate",
+        "blurb" : "Do your part and contribute some cold hard cash to the Guild.",
+        "dmable" : false,
+        "minrole" : "ORANGE"
+    },
+    "278993623679" : {
+        "id" : "auction",
+        "title" : "auction",
+        "blurb" : "Transfer way too much GP to some turd in exchange for a common item.",
+        "dmable" : false,
+        "minrole" : "ORANGE"
+    },
+    "329301335699" : {
+        "id" : "charinfo",
+        "title" : "charinfo",
+        "blurb" : "Prints the available information Bissle has on this Guild Member.",
+        "dmable" : false,
+        "minrole" : "ORANGE"
+    },
+    "297171354964" : {
+        "id" : "ping",
+        "title" : "ping",
+        "blurb" : "Pings Bissle for testing purposes.",
+        "dmable" : true,
+        "minrole" : "ORANGE"
+    },
+    "149981349311" : {
+        "id" : "initiate",
+        "title" : "initiate",
+        "blurb" : "Initiates a new Guild Member.",
+        "dmable" : false,
+        "minrole" : "ORANGE"
+    },
+    "331897432465" : {
+        "id" : "reward",
+        "title" : "reward",
+        "blurb" : "Distributes mission rewards to tagged Guild Members.",
+        "dmable" : false,
+        "minrole" : "STAFF"
+    },
+    "118975441899" : {
+        "id" : "dmreward",
+        "title" : "dmreward",
+        "blurb" : "Calculates and distributes DM reward to you.",
+        "dmable" : false,
+        "minrole" : "STAFF"
+    },
+    "72943969844" : {
+        "id" : "staffreward",
+        "title" : "staffreward",
+        "blurb" : "Calculates and distributes rewards to tagged Staff.",
+        "dmable" : false,
+        "minrole" : "MOD"
+    },
+    "79044626313" : {
+        "id" : "adjust",
+        "title" : "adjust",
+        "blurb" : "Increases/decreases selected players' XP/GP/TP total.",
+        "dmable" : false,
+        "minrole" : "MOD"
+    },
+    "296385632503" : {
+        "id" : "mute",
+        "title" : "mute",
+        "blurb" : "Mutes guild member.",
+        "dmable" : false,
+        "minrole" : "MOD"
+    },
+    "272455340043" : {
+        "id" : "unmute",
+        "title" : "ummute",
+        "blurb" : "Unmutes muted guild member.",
+        "dmable" : false,
+        "minrole" : "MOD"
+    },
+    "158937238932" : {
+        "id" : "wipe",
+        "title" : "wipe",
+        "blurb" : "Wipes all guild member data from database.",
+        "dmable" : false,
+        "minrole" : "ADMIN"
+    },
+    "68783684455" : {
+        "id" : "dobidding",
+        "title" : "dobidding",
+        "blurb" : "Makes Bissle do your bidding.",
+        "dmable" : true,
+        "minrole" : "ADMIN"
+    },
+    "70668792699" : {
+        "id" : "nonsense",
+        "title" : "nonsense",
+        "blurb" : "Engages nonsense mode.",
+        "dmable" : false,
+        "minrole" : "ADMIN"
+    },
+    "338761947171" : {
+        "id" : "invalid",
+        "title" : "invalid",
+        "blurb" : "Manually triggers Bissle's invalid command response.",
+        "dmable" : true,
+        "minrole" : "ADMIN"
+    },
+    "12707736894" : {
+        "id" : "test",
+        "title" : "test",
+        "blurb" : "Engages bot-test mode.",
+        "dmable" : false,
+        "minrole" : "ADMIN"
+    }
+}
