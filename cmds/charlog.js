@@ -16,7 +16,7 @@ const gnollTax = 1;
 module.exports.run = async (bot, message, args) => {
     if (args[0] == 'charlog') return funcs.invalid(message);
     else if (args[0] == 'makeitrain') {
-        if (funcs.isNorrick(message)) {
+        if (funcs.isDev(message)) {
             message.guild.members.forEach(wanka => {
                 sql.get(`SELECT * FROM charlog WHERE userId ="${wanka.id}"`).then(row => {
                     if (!row) console.log(wanka.toString() + ' does not have an active character. ');
