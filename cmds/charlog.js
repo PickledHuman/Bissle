@@ -144,7 +144,7 @@ module.exports.run = async (bot, message, args) => {
                     else { // Reward and confirm
                         let pxpamt = parseInt(args[1]);
                         let pcpamt = parseFloat(args[2])*100;
-                        let ptpamt = (noTP ? 0 :(row.level < 11 ? (row.level < 5 ? 2 : 4) : (row.level < 17 ? 6 : 8)));
+                        let ptpamt = (noTP ? 0 :(row.level < 11 ? (row.level < 5 ? 6 : 8) : (row.level < 17 ? 10 : 12)));
                         message.channel.send(row.name + ' ('+recipient.toString()+') has been awarded ' + pxpamt + ' XP, ' + (pcpamt/100) + ' GP, and ' + (ptpamt/2) + ' TP.');
 
                         // Process XP
@@ -179,7 +179,7 @@ module.exports.run = async (bot, message, args) => {
                     else if (level < 13) xpamt *= dmRewardBracket[1];
                     else xpamt *= dmRewardBracket[2];
                     let cpamt = xpamt*cpxpRatios[level];
-                    let tpamt = (level < 11 ? (level < 5 ? 1 : 2) : (level < 17 ? 3 : 4));
+                    let tpamt = (level < 11 ? (level < 5 ? 3 : 4) : (level < 17 ? 5 : 6));
 
                     message.channel.send(rowDM.name + ' has been awarded ' + xpamt + ' XP, ' + (cpamt/100) + ' GP, and ' + (tpamt/2.0) + ' TP.');
                     let increase = 0;
