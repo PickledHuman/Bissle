@@ -3,6 +3,8 @@ const Discord = module.require('discord.js');
 const fs = require('fs');
 const sql = require('sqlite');
 const pers = require('../personality.js');
+const settings = require('../botsettings.json');
+const PREFIX = settings.prefix;
 sql.open('./charlog.sqlite');
 
 module.exports.run = async (bot, message, args) => {
@@ -82,7 +84,7 @@ module.exports.run = async (bot, message, args) => {
             let someonePurged = false;
             for (i in lfg) { // ASSEMBLE NAMES AND WAITS
                 let wait = (Date.now() - lfg[i].time)/86400000;
-                if (wait > parseFloat((args[2] == 'pbp'? args[3] : args[2])) && (((lfg[i].low || lfg[i].mid || lfg[i].high || lfg[i].epic) && tiery != 'pbp') || (tiery == 'pbp' && lfg[i].pbp))) {
+                if ((wait > parseFloat(args[2] == 'pbp' ? args[3] : args[2])) && (((lfg[i].low || lfg[i].mid || lfg[i].high || lfg[i].epic) && tiery != 'pbp') || (tiery == 'pbp' && lfg[i].pbp))) {
                     purgeMsg += lfg[i].name + ' has been purged from LFG.\n';
                     removelfg(bot, message, tiery, true, i);
                     someonePurged = true;
