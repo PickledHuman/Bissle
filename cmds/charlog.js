@@ -62,7 +62,7 @@ module.exports.run = async (bot, message, args) => {
             let stype = args[2].toLowerCase();
             if (!(stype == 'gp' || stype == 'tp')) return message.channel.send('You can only spend gp or tp. NOT ' + args[2].toUpperCase() + '!');
             if (stype == 'tp' && parseInt(args[1]) - parseFloat(args[1]) != 0) return message.channel.send('Please specify a valid number of TP.');
-            if (stype == 'gp' && parseInt(parseFloat(args[1])*100) - parseInt(parseFloat(args[1])*100) != 0) return message.channel.send('Please specify a valid number of GP.');
+            if (stype == 'gp' && parseInt(parseFloat(args[1])*100) - parseFloat(args[1])*100 != 0) return message.channel.send('Please specify a valid number of GP.');
 
             if (!args[3]) return message.channel.send('Please specify what you intend to spend your ' + stype + ' on.');
             let samt = parseFloat(args[1]);
