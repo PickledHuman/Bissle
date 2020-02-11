@@ -15,11 +15,22 @@ const gnollTax = 1;
 
 module.exports.run = async (bot, message, args) => {
     if (args[0] == 'charlog') return funcs.invalid(message);
-    /*else if (args[0] == 'makeitrain') {
-        if (funcs.isNorrick(message))
-            sql.run(`UPDATE charlog SET cp = cp+8000`);
+    else if (args[0] == 'makeitrain') {
+        if (funcs.isNorrick(message)) {
+            message.guild.members.forEach(wanka => {
+                sql.get(`SELECT * FROM charlog WHERE userId ="${wanka.id}"`).then(row => {
+                    if (!row) console.log(wanka.toString() + ' does not have an active character. ');
+                    else {
+                        let rainTP = Math.ceil(row.tp*(row.level < 11 ? (row.level < 5 ? 3 : 2) : (row.level < 17 ? 5/3.0 : 1.5)));
+                        sql.run(`UPDATE charlog SET tp = ${rainTP} WHERE userId = ${wanka.id}`);
+                    }
+                }, err => {
+                    console.log("OH FUCK OH FUCK OH FUCK");
+                });
+            });
+        }
         return;
-    }*/
+    }
     if (message.channel.name == 'rewards-log' && !(args[0] == 'reward' || args[0] == 'dmreward' || args[0] == 'staffreward' || args[0] == 'adjust')) {
         message.author.send('Please use only the '+ (funcs.hasPermission('adjust', message) ? '**'+PREFIX+'adjust**, **'+PREFIX+'staffreward**, ' : '') + '**'+PREFIX+'reward** and **'+PREFIX+'dmreward** commands in the ' + message.guild.channels.find('name', 'rewards-log') + '.');
         message.delete();
