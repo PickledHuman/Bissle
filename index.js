@@ -150,7 +150,7 @@ bot.on("message", async (message) => {
                 reset(message);
                 break;
             case "makeitrain": // This was a one-off function to adjust everyone's TP total.
-                if (!funcs.isNorrick(message)) break;
+                if (!funcs.isDev(message)) break;
                 message.guild.members.forEach(wanker => {
                     if (bot.vault[wanker.id]) {
                         let oldTP = bot.vault[wanker.id].tp;
