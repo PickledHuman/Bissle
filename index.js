@@ -149,18 +149,20 @@ bot.on("message", async (message) => {
                 if (!funcs.hasPermission('dobidding', message)) return funcs.invalid(message);
                 reset(message);
                 break;
-            case "makeitrain": // This was a one-off function to adjust everyone's GP total.
-                /*if (!funcs.isNorrick(message)) break;
+            case "makeitrain": // This was a one-off function to adjust everyone's TP total.
+                if (!funcs.isNorrick(message)) break;
                 message.guild.members.forEach(wanker => {
                     if (bot.vault[wanker.id]) {
-                        bot.vault[wanker.id].cp = bot.vault[wanker.id].cp+8000;
+                        let oldTP = bot.vault[wanker.id].tp;
+                        let wLevel = bot.vault[wanker.id].level
+                        bot.vault[wanker.id].tp = Math.ceil(oldTP*(wLevel < 11 ? (wLevel < 5 ? 3 : 2) : (wLevel < 17 ? 5/3.0 : 1.5)));
                     }
                 });
                 fs.writeFile('./vault.json', JSON.stringify(bot.vault, null, 4), err => {
                     if (err) throw err;
                 });
                 bot.commands.get('charlog').run(bot, message, args);
-                console.log("RAIN MADE");*/
+                message.channel.send("RAIN MADE");
                 // Log Membership
                 /*
                 let memberData = "id,username,discriminator,nickname,lastMessageSent\n";
